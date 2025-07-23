@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <header>
+        <h2>JavaScript Simple Quiz Application</h2>
+        <div class="timer" id="timerBox">
+          Time Left: <span id="timer">20</span>
+        </div>
+      </header>
+      
+      <main>
+        <div class="question-area">
+          <h2 id="question">Loading...</h2>
+          <ul class="options">
+            <li data-option="A" class="option">A)</li>
+            <li data-option="B" class="option">B)</li>
+            <li data-option="C" class="option">C)</li>
+            <li data-option="D" class="option">D)</li>
+          </ul>
+        </div>
+      </main>
+
+      <footer>
+        <button id="previousBtn">Previous</button>
+        <span id="progress">1 of 5 Questions</span>
+        <button id="nextBtn">Next</button>
+      </footer>
+
+      <div id="result" class="hidden">
+        <h2>Quiz Completed!</h2>
+        <p>Your Score: <span id="score"></span> / <span id="total"></span></p>
+        <p id="remark"></p>
+        <button id="restartBtn">Restart Quiz</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
